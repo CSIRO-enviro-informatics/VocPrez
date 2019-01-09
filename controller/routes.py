@@ -16,7 +16,8 @@ def index():
     return render_template(
         'index.html',
         title='SKOS Styler',
-        navs={}
+        navs={},
+        organisation_branding=config.ORGANISATION_BRANDING
     )
 
 
