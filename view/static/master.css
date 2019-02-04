@@ -18,6 +18,30 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+.disabled a {
+    color: gray;
+}
+
+.active a {
+    font-weight: bold;
+}
+
+.pagination ul li {
+    display: inline;
+    margin-right: 20px;
+    border-style: outset;
+    border-width: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h5 {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -1634,75 +1658,6 @@ main .gallery a:visited {
     #alert .close-message::after {
       transform: rotate(-45deg); }
 
-header {
-  position: relative;
-  background: linear-gradient(112deg, #327085 0%, #327085 50%, #134758 50%, #134758 100%);
-  box-shadow: 0 0 10px rgba(53, 52, 53, 0.9);
-  color: #fff; }
-  header a:link,
-  header a:active,
-  header a:visited {
-    color: #fff;
-    text-decoration: none; }
-  header .flex {
-    display: flex;
-    align-items: center; }
-  header .show-search,
-  header .show-menu {
-    display: none; }
-  header .branding,
-  header .contact-search {
-    padding: 10px 0;
-    width: 50%; }
-  header .branding {
-    margin-right: 40px; }
-    header .branding a:focus,
-    header .branding a:hover {
-      outline: none; }
-  header .contact-search {
-    margin-left: 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-    header .contact-search .find-contacts {
-      cursor: pointer; }
-      header .contact-search .find-contacts:hover {
-        text-decoration: underline; }
-    header .contact-search form {
-      margin: 10px 0 10px 20px;
-      display: flex; }
-    header .contact-search input {
-      padding: 10px;
-      border: 1px solid #134758;
-      border-right: 0;
-      border-radius: 0;
-      appearance: none;
-      font-family: "Heebo", sans-serif;
-      font-size: 16px;
-      line-height: 26px; }
-      header .contact-search input:focus {
-        outline: none; }
-    header .contact-search button {
-      margin: 0;
-      width: 40px;
-      overflow: hidden;
-      border: 1px solid #327085;
-      border-left: 0;
-      appearance: none;
-      text-indent: -9999px;
-      text-align: left;
-      white-space: nowrap;
-      cursor: pointer;
-      background: url("/static/search.png") #353435 center center no-repeat;
-      background-size: 30px; }
-  header svg {
-    width: 240px;
-    height: 41.28px;
-    fill: #fff; }
-  header h1 {
-    margin-top: 10px;
-    font-size: 20px; }
-
 @media only screen and (max-width: 1024px) {
   .contact-search {
     flex-wrap: wrap; } }
@@ -2141,7 +2096,7 @@ header {
   .footer-content a:visited {
     padding: 15px 0;
     display: block;
-    color: #fff;
+    /*color: #fff;*/
     text-decoration: none; }
   .footer-content a:focus,
   .footer-content a:hover {
@@ -2208,7 +2163,7 @@ footer .links {
   footer .links a:active,
   footer .links a:visited {
     text-decoration: none;
-    color: #000; }
+    /*color: #000;*/ }
   footer .links a:focus,
   footer .links a:hover {
     text-decoration: underline; }

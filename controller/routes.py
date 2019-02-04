@@ -229,6 +229,5 @@ def about():
         'about.html',
         title='About',
         navs={},
-        content=content,
-        organisation_branding=config.ORGANISATION_BRANDING
+        content=content
     )

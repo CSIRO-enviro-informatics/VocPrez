@@ -11,7 +11,7 @@ body {
 #container-content {
 	margin: 0 auto;
 	text-align:left;
-	width:900px;
+	width:1245px;
 	background-color:white;
 	padding: 20px 0 20px 0;
 }
@@ -72,7 +72,7 @@ a:hover {
 #header > table {
 	margin:0 auto;
 	text-align:left;
-	width:900px;
+	width:1245px;
 }
 img#ga-logo {
 	height:100px;
@@ -103,7 +103,7 @@ td#quote {
 #footer-links {
     text-align: left;
 	margin:0 auto;
-	width:900px;
+	width:1245px;
 }
 
 #footer-links a {
@@ -131,7 +131,7 @@ td#quote {
     margin:0 auto;
     margin-top: 10px;
     text-align: left;
-    width: 900px;
+    width: 1245px;
 }
 
 /*
@@ -209,6 +209,7 @@ table.pretty th {
 .pagination {
     margin: 10px 0;
     margin-top: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -226,3 +227,4 @@ table.pretty th {
 .no-line-height {
     line-height: 0px;
 }
+
