@@ -33,7 +33,6 @@ VOCABS = {
     },
 }
 
-ORGANISATION_BRANDING = 'ga'
 
 # extend this intsnace's list of vocabs by using the known sources
 VOCABS = {**VOCABS, **FILE.list_vocabularies()}  # picks up all vocab RDF (turtle) files in data/
