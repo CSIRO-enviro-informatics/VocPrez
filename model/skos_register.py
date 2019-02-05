@@ -30,7 +30,7 @@ class SkosRegisterRenderer(RegisterRenderer):
             items,
             register_item_type_string,
             total,
-            views=views
+            #views=views
         )
 
     def render(self):

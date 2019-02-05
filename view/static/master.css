@@ -2230,3 +2230,6 @@ form.search {
 #search-results .date,
 #search-results cite {
   font-size: 14px; }
+
+th {
+white-space: nowrap;}
