@@ -61,7 +61,7 @@ VOCABS = {
         'source': VocabSource.RVA,
         'title': 'Stratigraphic Rank',
         'sparql': 'http://vocabs.ands.org.au/repository/api/sparql/ga_stratigraphic-rank_v0-1',
-        'download': 'https://vocabs.ands.org.au/registry/api/resource/downloads/217/ga_stratigraphic-rank_v0-1.ttl'
+        'download': 'https://vocabs.ands.org.au/registry/api/resource/downloads/217/ga-stratigraphic-rank.ttl'
     },
     # 'assoc': {
     #     'source': VocabSource.FILE,
