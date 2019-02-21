@@ -23,6 +23,7 @@ class Source:
         from data.source_RVA import RVA
         from data.source_FILE import FILE
         from data.source_VOCBENCH import VOCBENCH
+        from data.source_SPARQL import SPARQL
 
         # for this vocab, identified by vocab_id, find its source type
         source_type = config.VOCABS[self.vocab_id].get('source')
@@ -34,6 +35,8 @@ class Source:
             return getattr(RVA(self.vocab_id, self.request), function_name)
         elif source_type == config.VocabSource.VOCBENCH:
             return getattr(VOCBENCH(self.vocab_id, self.request), function_name)
+        elif source_type == config.VocabSource.SPARQL:
+            return getattr(SPARQL(self.vocab_id, self.request), function_name)
 
     def __init__(self, vocab_id, request):
         self.vocab_id = vocab_id

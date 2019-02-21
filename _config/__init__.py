@@ -63,6 +63,12 @@ VOCABS = {
         'sparql': 'http://vocabs.ands.org.au/repository/api/sparql/ga_stratigraphic-rank_v0-1',
         'download': 'https://vocabs.ands.org.au/registry/api/resource/downloads/217/ga-stratigraphic-rank.ttl'
     },
+    'jena-fuseki-igsn': {
+        'source': VocabSource.SPARQL,
+        'title': 'jena-fuseki-igsn',
+        'sparql': 'http://test.loci.prov.ga.gov.au/fuseki/Andrew_IGSN_Test/query',
+        'download': 'https://vocabs.ands.org.au/registry/api/resource/downloads/217/ga-stratigraphic-rank.ttl'
+    },
     # 'assoc': {
     #     'source': VocabSource.FILE,
     #     'title': 'ISO19115-1 Association Type Codes - File'
@@ -71,17 +77,17 @@ VOCABS = {
     #     'source': VocabSource.FILE,
     #     'title': 'Tenement Type'
     # },
-    'Test_Rock_Types_Vocabulary': {
-        'source': VocabSource.VOCBENCH,
-        'title': 'Test Rock Types'
-    },
-    'contact_type': {
+    # 'Test_Rock_Types_Vocabulary': {
+    #     'source': VocabSource.VOCBENCH,
+    #     'title': 'Test Rock Types'
+    # },
+    # 'contact_type': {
+    #     'source': VocabSource.FILE,
+    #     'title': 'Contact Type - File'
+    # },
+    'ga-stratigraphic-rank': {
         'source': VocabSource.FILE,
-        'title': 'Contact Type - File'
-    },
-    'stratigraphic_rank': {
-        'source': VocabSource.FILE,
-        'title': 'Stratigraphic Rank - File'
+        'title': 'Stratigraphic Rank File'
     }
 }
 
@@ -92,9 +98,10 @@ VOCABS = {
 # read in RDF vocab files on startup in vocab_files directory
 FILE.init()
 RVA.init()
+#SPARQL.init()
 
 # extend this instances' list of vocabs by using the known sources
 VOCABS = {**VOCABS, **FILE.list_vocabularies()}  # picks up all vocab RDF (turtle) files in data/
-# VOCABS = {**VOCABS, **VOCBENCH.list_vocabularies()}  # picks up all vocabs at the relevant VocBench instance
+#VOCABS = {**VOCABS, **VOCBENCH.list_vocabularies()}  # picks up all vocabs at the relevant VocBench instance
 
 
